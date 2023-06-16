@@ -1,9 +1,9 @@
 package com.example.orderservice.domain;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.ColumnDefault;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -12,7 +12,8 @@ import java.util.Date;
 @Table(name = "orders")
 public class OrderEntity implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, length = 120, unique = true)

@@ -15,10 +15,9 @@ spring:
       settings:
         web-allow-others: true
   datasource:
-    url: jdbc:h2:tcp://localhost/~/msa
+    url: jdbc:h2:tcp://localhost/~/test
     username: sa
     driver-class-name: org.h2.Driver
-    initialization-mode: always
 
   jpa:
     open-in-view: false
